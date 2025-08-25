@@ -75,11 +75,19 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
             ]
+
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "46bf7fa3-d9d9-4de6-832d-a2d02b19a285"
   }
 }
