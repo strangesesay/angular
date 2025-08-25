@@ -7,12 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.css'
 })
 export class ProductList {
+  name = 'John Doe';
   products =
     {
       id: 1,
       name: 'Wireless Mouse',
       price: 25.99,
-      mimage: './assets/purple-computer-mouse.jpg'
+      mimage: './assets/purple-computer-mouse.jpg',
+      instock: 0
     }
 
 }
