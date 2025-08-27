@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-sm-6 col-md-4 col-lg-3" >
+    <div class="card h-100">
+      <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+      <div class="card-body">
+        <h5 class="card-title">Name: {{ product.name }}</h5>
+        <p class="card-text">Description: {{ product.reviews }}</p>
+        <p class="card-text">Rating: {{ product.rating }}</p>
+        <p class="card-text"><strong>Price: {{ product.price }}</strong></p>
+        <p class="card-text"><strong>Quantity: {{ product.quantity }}</strong></p>
+        <p class="card-text" [ngStyle]="{fontWeight: 'bold', color: product.quantity ? 'Green' : 'Red'}">
+          Quantity: {{ product.quantity ? 'Available in stock' : 'Not Available in Stock'}}
+        </p>
+        <button class="btn btn-primary" > Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
